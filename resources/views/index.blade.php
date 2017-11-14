@@ -57,7 +57,7 @@
             <div class="row">
           <div class="col-sm-4">
               <div  style="padding-bottom:15px;">
-                  <a href="http://goo.gl/forms/wUI1KCk5Ff">
+                  <a href="https://goo.gl/DS14hj">
                       <img src="{{URL::to('/')}}/img/dangkituvan.png" class="rounded img-fluid">
                   </a>
               </div>

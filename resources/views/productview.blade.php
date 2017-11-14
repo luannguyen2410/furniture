@@ -21,7 +21,7 @@
 								<p class="text-center">
 									<img alt="hotro" src="{{ URL::asset('img/lienhetuvan.png')}}" height="163" width="242" style="margin-bottom: 10px; padding: 15px; border: 1px solid #dddddd; border-radius: 15px; box-shadow: rgba(255, 255, 255, 0.85098) 0px 2px 0px inset, rgba(0, 0, 0, 0.0784314) 0px 0px 10px inset, rgba(0, 0, 0, 0.0470588) 0px 1px 1px, rgba(0, 0, 0, 0.0784314) 0px 7px 4px -4px; display: block; margin-left: auto; margin-right: auto; background-color: #ffffff;">
 								</p>
-								<p class="text-center" style="font-size:11px">Email: sontrananhmta@gmail.com</p>
+								<p class="text-center" style="font-size:11px">Email: noithatpqmax@gmail.com</p>
 							</div>
 						</div>
 					</div>
