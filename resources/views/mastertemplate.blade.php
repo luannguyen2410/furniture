@@ -84,7 +84,7 @@
         <div class="col-md-12">
           <div class="row">
 			<div class="footer-col col-md-4">
-              <h5>Giới thiệu về PQMax</h5>
+              <h6>Giới thiệu về PQMax</h6>
               <ul class="list-inline">
                 <li class="list-inline-item">
                   <a class="btn-social btn-outline" href="#">
@@ -115,7 +115,7 @@
             </div>
             <div class="footer-col col-md-4">
               <div class="container">
-				<h4 class="text-center">Liên hệ với chúng tôi</h4>
+				<h5 class="text-center">Liên hệ với chúng tôi</h5>
 				<div class="row">
 				  <div class="col-lg-12 mx-auto">
 					<!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
@@ -163,16 +163,14 @@
         <div class="container">
           <div class="row">
 			<div class="col-xs-6 mx-auto text-left">
-				<span style="line-height: 16.7999992370605px; color: #39b54a;">CÔNG TY CỔ PHẦN PQMaX</span><br style="line-height: 16.7999992370605px;">
-				<span style="line-height: 16.7999992370605px;">167 - Quan Nhân - Thanh Xuân Hà Nội</span><br>
-				<span style="line-height: 16.7999992370605px;">Hotline: 098 769 67 47 - BP Kỹ thuật: 098 769 67 47</span><br>
+				<span style="color: #39b54a;">CÔNG TY CỔ PHẦN PQMaX</span><br >
+				<span >167 - Quan Nhân - Thanh Xuân Hà Nội</span><br>
+				<span >Hotline: 098 769 67 47 - BP Kỹ thuật: 098 769 67 47</span><br>
 				<!-- <hr style="border-bottom: 1px solid #444;margin: 10px 0;">
 				<hr style="border-bottom: 1px solid #444;margin: 10px 0;"> -->
-				<span style="line-height: 16.7999992370605px;">Email: <span style="color: #c0c0c0;"><a ondragstart="return false;" href="mailto:info@beldecor.vn"><span style="color: #999999;">noithatpqmax@gmail.com</span></a></span></span>
-				<a ondragstart="return false;" style="line-height: 16.7999992370605px;" href="mailto:big2d.vn@gmail.com"></a>
-				<span style="line-height: 16.7999992370605px;">&nbsp;- Website: <a style="color:white" href="https://www.pqmax.com.vn/">www.pqmax.com.vn</a></span><br style="line-height: 16.7999992370605px;">
-				<a ondragstart="return false;" style="line-height: 16.7999992370605px;" href="http://noithatbig2d.vn/"></a>
-				<span style="line-height: 16.7999992370605px;">Copyright 2016 © PQMax Corporation.&nbsp;All rights reserved.&nbsp;</span>			
+				<span >Email: <span style="color: #c0c0c0;"><a ondragstart="return false;" href="mailto:info@beldecor.vn"><span style="color: #999999;">noithatpqmax@gmail.com</span></a></span></span>
+				<span >&nbsp;- Website: <a style="color:white" href="https://www.pqmax.com.vn/">www.pqmax.com.vn</a></span><br >
+				<span >Copyright 2016 © PQMax Corporation.&nbsp;All rights reserved.&nbsp;</span>			
 			</div>
           </div>
         </div>
@@ -191,7 +189,7 @@
    
 	<script>
 		function initMap() {
-        var uluru = {lat: 20.984876, lng:  105.790639};
+        var uluru = {lat: 21.003566, lng: 105.811120};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 15,
           center: uluru
