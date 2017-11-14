@@ -5,7 +5,7 @@
 @endsection
 @section('content')
 
-<div id="userBody" class="container" style="padding-top: 20px;">
+<div id="userBody" class="container" style="padding-top: 20px; max-width:985px">
 <h2>User</h2>
 <a action="add" class="btn btn-primary display_modal" style="margin-bottom:5px">Add New</a>
 <table class="table table-striped table-bordered dataTable no-footer">
