@@ -7,7 +7,10 @@
             <div class="row">
             @foreach ($products as $product)
                 <div class="col-sm-4 portfolio-item">
-                <span><i class="fa fa-home" aria-hidden="true"></i><b>{{$product->title}}</b></span>
+                <span><i class="fa fa-home" aria-hidden="true"></i><b data-toggle="tooltip" title="{{$product->title}}">
+                    <?php 
+                     echo (strlen($product->title) > 37) ? substr($product->title,0,34).'...' : $product->title 
+                    ?></b></span>
                 <a class="portfolio-link" href="{{URL::to('/')}}/product?product_id={{$product->id}}">
                     <div class="caption">
                     <div class="caption-content">
@@ -22,4 +25,9 @@
             </div>
         </div>
     </section>
-    @endsection
+    <script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+    });
+    </script>
+@endsection

@@ -5,11 +5,33 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-9">
-                    <!-- <h3 class="text-center" id="product-title"></h3> -->
-                    <!-- <hr class="star-primary"> -->
+                    <h3 class="text-center" id="product-title">{{$product->title}}</h3>
+                    <hr class="star-primary"> 
                     <div id="product-content" style="padding-bottom: 15px">
+                    <?php
+                        echo $product->content;
+                    ?>
                     </div>
-                     
+                    <div style="border-top: 1px solid rgba(0,0,0,.15); padding-top:15px; margin-top:20px">
+                        <div class="col-sm-12 text-center" >
+                                <h5>Các Tin Liên Quan</h5>
+                        </div>
+                        <div class="row portfolio-content">
+                            @foreach ($relateds as $related)
+                            <div class="col-sm-4 portfolio-item">
+                            <a class="portfolio-link" href="{{URL::to('/')}}/product?product_id={{$related->id}}" >
+                                <div class="caption2">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                                </div>
+                                <img class="img-fluid" src="{{$related->image}}" alt="{{$related->title}}">
+                            </a>
+                            <span><b>{{$related->title}}</b></span>
+                            </div>
+                            @endforeach
+                        </div>
+                    </div> 
                 </div>
                 <div class="hidden-sm-down col-lg-3">
 					<div class="row">
@@ -58,25 +80,7 @@
 							
 				</div>
             </div>
+            
         </div>
     </section>
-    <script>
-        $(function() {
-            $.ajax({
-                type:'POST',
-                url:'{{URL::to('/')}}/product/view',
-                data:{
-                    '_token': '<?php echo csrf_token() ?>',
-                    id: {{$product}},
-                },
-                success:function(data){
-                   $('#product-content').append(data.product.content);
-                   $('#product-title').append(data.product.title);
-                },
-                error: function (xhr) {
-                    alert(JSON.stringify(xhr.responseText).replace(/\\"/g, ' ').replace(/"/g, ''));  
-                }
-            }); 
-        })
-    </script>
-    @endsection
+@endsection

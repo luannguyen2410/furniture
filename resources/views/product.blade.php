@@ -4,7 +4,7 @@
     <span>{{$username}}</span>
 @endsection
 @section('content')
-<div id="productBody" class="container" style="padding-top: 20px;">
+<div id="productBody" class="container" style="padding-top: 20px; max-width:970px">
     <h2>Product</h2>
     <a action="add" class="btn btn-primary display_modal">Add New</a>
     

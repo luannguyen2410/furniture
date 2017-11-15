@@ -117,7 +117,7 @@
                 <i class="fa fa-search-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="{{$service->image}}" alt="{{$information->title}}">
+            <img class="img-fluid" src="{{$information->image}}" alt="{{$information->title}}">
           </a>
           <span><b>{{$information->title}}</b></span>
         </div>
