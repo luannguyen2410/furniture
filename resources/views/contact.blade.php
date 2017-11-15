@@ -23,6 +23,13 @@
   </head>
 
   <body id="page-top">
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.11';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
   
 	<div class="vt_wrapper_drawer clearfix">
     
@@ -171,35 +178,12 @@
       <div class="footer-above">
         <div class="col-md-12">
           <div class="row">
-			<div class="footer-col col-md-4">
-              <h6>Giới thiệu PQMaX</h6>
-              <ul class="list-inline">
-                <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="#">
-                    <i class="fa fa-fw fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="#">
-                    <i class="fa fa-fw fa-google-plus"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="#">
-                    <i class="fa fa-fw fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="#">
-                    <i class="fa fa-fw fa-linkedin"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="#">
-                    <i class="fa fa-fw fa-dribbble"></i>
-                  </a>
-                </li>
-              </ul>
+			      <div class="footer-col col-md-4">
+              <h6>FANPAGE FACEBOOK</h6>
+              <div class="fb-page" 
+              data-href="https://web.facebook.com/noithatpqmax/"
+              data-hide-cover="false"
+              data-show-facepile="false"></div>
             </div>
             <div class="footer-col col-md-4">
               <div class="container">
