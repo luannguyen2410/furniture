@@ -23,7 +23,13 @@
   </head>
 
   <body id="page-top">
-  
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.11';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 	<div class="vt_wrapper_drawer clearfix">
     
     <!-- Navigation -->
@@ -83,36 +89,13 @@
       <div class="footer-above">
         <div class="col-md-12">
           <div class="row">
-			<div class="footer-col col-md-4">
-              <h6>Giới thiệu về PQMax</h6>
-              <ul class="list-inline">
-                <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="#">
-                    <i class="fa fa-fw fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="#">
-                    <i class="fa fa-fw fa-google-plus"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="#">
-                    <i class="fa fa-fw fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="#">
-                    <i class="fa fa-fw fa-linkedin"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="#">
-                    <i class="fa fa-fw fa-dribbble"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
+			    <div class="footer-col col-md-4">
+              <h6>FANPAGE FACEBOOK</h6>
+              <div class="fb-page" 
+                data-href="https://web.facebook.com/noithatpqmax/"
+                data-hide-cover="false"
+                data-show-facepile="false"></div>
+            </div>  
             <div class="footer-col col-md-4">
               <div class="container">
 				<h5 class="text-center">Liên hệ với chúng tôi</h5>
@@ -120,28 +103,28 @@
 				  <div class="col-lg-12 mx-auto">
 					<!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
 					<!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-					<form name="sentMessage" id="contactForm" novalidate>
+					<form name="sentMessage" id="contactForm" novalidate action="{{URL::to('/')}}/sendmail">
 					  <div class="control-group">
 						<div class="form-group controls">
-						  <input class="form-control" id="name" type="text" placeholder="Name" required data-validation-required-message="Please enter your name.">
+						  <input class="form-control" id="name" name='name' type="text" placeholder="Name" required data-validation-required-message="Please enter your name.">
 						  <p class="help-block text-danger"></p>
 						</div>
 					  </div>
 					  <div class="control-group">
 						<div class="form-group controls">
-						  <input class="form-control" id="email" type="email" placeholder="Email Address" required data-validation-required-message="Please enter your email address.">
+						  <input class="form-control" id="email" name='email' type="email" placeholder="Email Address" required data-validation-required-message="Please enter your email address.">
 						  <p class="help-block text-danger"></p>
 						</div>
 					  </div>
 					  <div class="control-group">
 						<div class="form-group controls">
-						  <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required data-validation-required-message="Please enter your phone number.">
+						  <input class="form-control" id="phone" name='phone' type="text" placeholder="Phone Number" data-validation-required-message="Please enter your phone number.">
 						  <p class="help-block text-danger"></p>
 						</div>
 					  </div>
 					  <div class="control-group">
 						<div class="form-group controls">
-						  <textarea class="form-control" id="message" rows="2" placeholder="Message" required data-validation-required-message="Please enter a message."></textarea>
+						  <textarea class="form-control" id="message" name='message' rows="2" placeholder="Message" required data-validation-required-message="Please enter a message."></textarea>
 						  <p class="help-block text-danger"></p>
 						</div>
 					  </div>
@@ -174,7 +157,7 @@
 			</div>
           </div>
         </div>
-      </div>
+               
     </footer>
 
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
