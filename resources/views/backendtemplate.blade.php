@@ -32,7 +32,7 @@
       </div>
 
       <!--logo start-->
-      <a href="dashboard" class="logo"><img id="logo" src="{{ URL::asset('img/logo.png')}}" style="height:40px">   <span class="lite">Admin</span></a>
+      <a href="dashboard" class="logo"><img id="logo" src="{{ URL::asset('img/logo.png')}}" style="height:60px">   <span class="lite">Admin</span></a>
       <!--logo end-->
       <div class="top-nav notification-row">
         <!-- notificatoin dropdown start-->

@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="sonta">
 
-    <title>Nội thất BIG2D</title>
+    <title>Nội thất PQMaX</title>
 
     <link href="{{ URL::asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ URL::asset('vendor/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
@@ -180,10 +180,17 @@
           <div class="row">
 			      <div class="footer-col col-md-4">
               <h6>FANPAGE FACEBOOK</h6>
-              <div class="fb-page" 
+              <div class="fb-page">
+              <img class="img-fluid" src="{{ URL::asset('img/slide1.png')}}">
+              <div class="img-overlay">
+                <a href="https://www.facebook.com/pg/noithatpqmax/about/?ref=page_internal" title="Facebook" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-fw"></i> Thích trang</a>
+                <a href="https://www.facebook.com/sharer/sharer.php?s=100&p[url]=https://www.facebook.com/pg/noithatpqmax/about/?ref=page_internal&p[images][0]=&p[title]=Title%20Goes%20Here&p[summary]=Description%20goes%20here!" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false"><button type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"></i> Chi sẻ</button></a>
+              </div>
+              </div>
+              <!-- <div class="fb-page" 
               data-href="https://web.facebook.com/noithatpqmax/"
               data-hide-cover="false"
-              data-show-facepile="false"></div>
+              data-show-facepile="false"></div> -->
             </div>
             <div class="footer-col col-md-4">
               <div class="container">
