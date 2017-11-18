@@ -65,7 +65,9 @@
           </div>
           <div class="col-sm-4">
               <div style="padding-bottom:15px;">
+              <a href="{{URL::to('/')}}/contact">
                   <img src="{{URL::to('/')}}/img/dathangsanpham.png"class="rounded img-fluid">
+              </a>
               </div>
           </div>
           <div class="col-sm-4">
@@ -93,7 +95,7 @@
     </div>
   </section>
   <div style="">
-    <img class="img-fluid" src="img/backgroud-giua.png">
+    <img class="img-fluid-giua" src="img/backgroud-giua.png">
   </div>
   
     <!-- Portfolio Grid Section -->

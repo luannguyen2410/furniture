@@ -60,9 +60,9 @@
 				Sản phẩm</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="{{URL::to('/')}}/product?product_id=64" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				Dịch vụ</a>
-				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 				  <a class="dropdown-item" href="{{URL::to('/')}}/product?product_id=41">Thiết kế kiến trúc và nội thất</a>
 				  <a class="dropdown-item" href="{{URL::to('/')}}/product?product_id=43">Thi công kiến trúc và nội thất</a>
 				  <a class="dropdown-item" href="{{URL::to('/')}}/product?product_id=45">Cải tạo nhà cửa</a>
@@ -92,10 +92,10 @@
 			    <div class="footer-col col-md-4">
               <h6>FANPAGE FACEBOOK</h6>
               <div class="fb-page">
-              <img class="img-fluid" src="{{ URL::asset('img/slide1.png')}}">
+              <img class="img-fluids" style="width:100%;height:220px" src="{{ URL::asset('img/slide1.png')}}">
               <div class="img-overlay">
-                <a href="https://www.facebook.com/pg/noithatpqmax/about/?ref=page_internal" title="Facebook" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-fw"></i> Thích trang</a>
-                <a href="https://www.facebook.com/sharer/sharer.php?s=100&p[url]=https://www.facebook.com/pg/noithatpqmax/about/?ref=page_internal&p[images][0]=&p[title]=Title%20Goes%20Here&p[summary]=Description%20goes%20here!" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false"><button type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"></i> Chi sẻ</button></a>
+                <a href="https://www.facebook.com/pg/noithatpqmax/about/?ref=page_internal" target="_blank" title="Facebook" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-fw"></i> Thích trang</a>
+                <a href="https://www.facebook.com/sharer/sharer.php?s=100&p[url]=https://www.facebook.com/pg/noithatpqmax/about/?ref=page_internal&p[images][0]=&p[title]=Title%20Goes%20Here&p[summary]=Description%20goes%20here!" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false"><button type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"></i> Chia sẻ</button></a>
               </div>
               </div>
               <!-- <div class="fb-page" 
@@ -105,12 +105,12 @@
             </div>  
             <div class="footer-col col-md-4">
               <div class="container">
-				<h5 class="text-center">Liên hệ với chúng tôi</h5>
+				<h6 class="text-center">Liên hệ với chúng tôi</h6>
 				<div class="row">
 				  <div class="col-lg-12 mx-auto">
 					<!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
 					<!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-					<form name="sentMessage" id="contactForm" novalidate action="{{URL::to('/')}}/sendmail">
+					<form name="sentMessage" id="contactForm" novalidate action="https://goo.gl/DS14hj" target="_blank">
 					  <div class="control-group">
 						<div class="form-group controls">
 						  <input class="form-control" id="name" name='name' type="text" placeholder="Name" required data-validation-required-message="Please enter your name.">
@@ -136,7 +136,10 @@
 						</div>
 					  </div>
 					  <div class="control-group">
-						<button type="submit" class="btn btn-success" id="sendMessageButton">Send</button>
+						<button type="submit" class="btn btn-success" id="sendMessageButton">
+            <!-- <a href="https://goo.gl/DS14hj"> -->
+              Send
+            </button>
 					  </div>
 					</form>
 				  </div>
@@ -144,7 +147,8 @@
 			  </div>
             </div>
             <div class="footer-col col-md-4">
-				<div id="map" style="width:100%;height:300px"></div>
+            <h6 class="text-center">Google map tới PQMaX</h6>
+				<div id="map" style="width:100%; height:220px;"></div>
             </div>
           </div>
         </div>
@@ -179,7 +183,7 @@
    
 	<script>
 		function initMap() {
-        var uluru = {lat: 21.003566, lng: 105.811120};
+        var uluru = {lat: 21.003550, lng: 105.811129};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 15,
           center: uluru
@@ -193,7 +197,7 @@
       window.location.href = $(this).attr('href');
     });  
 	</script>
-
+  
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAL-eD7dl9VJNPLqzKfQSpDoKvzmyQBwYU&callback=initMap"></script>
   </body>
 
