@@ -38,7 +38,7 @@
         <!--<a class="navbar-brand js-scroll-trigger" href="index.html"><img id="logo" src="img/logo.png" style="max-height: 58px;"></a>-->
 		<a class="navbar-brand js-scroll-trigger" href="{{URL::to('/')}}"><img id="logo" src="{{URL::to('/')}}/img/logo.png" class="logo-size-lg"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
+          
           <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
