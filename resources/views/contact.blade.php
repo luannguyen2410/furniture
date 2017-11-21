@@ -180,21 +180,10 @@
           <div class="row">
 			      <div class="footer-col col-md-4">
             <h6>FANPAGE FACEBOOK</h6>
-            <div class="fb-page">    
-            <img class="img-fluid"  src="{{ URL::asset('img/slide1.png')}}">
-            <div class="img-overlay">
-            <div class="fb-like" style ="background-color:white; panding-top:10px" data-href="https://www.facebook.com/pg/noithatpqmax/about/?ref=page_internal" data-width="385" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
-            </div>
-        </div>
-            <script>(function(d, s, id) {
-              var js, fjs = d.getElementsByTagName(s)[0];
-              if (d.getElementById(id)) return;
-              js = d.createElement(s); js.id = id;
-              js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.11';
-              fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));</script>
-
-          </div>  
+            <div class="container">
+            <div class="fb-like-box fb_iframe_widget" data-href="https://www.facebook.com/pg/noithatpqmax/about/?ref=page_internal" data-width="370" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+         </div>
+          </div>
             <div class="footer-col col-md-4">
               <div class="container">
 				<h6 class="text-center">Liên hệ với chúng tôi</h6>

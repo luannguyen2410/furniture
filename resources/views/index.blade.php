@@ -3,7 +3,7 @@
     <!-- Header -->
     <header class="masthead">
     <div class="	">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div id="carouselExampleIndicators" class="carousel slide d-none d-sm-block" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -94,8 +94,8 @@
       </div>
     </div>
   </section>
-  <div style="">
-    <img class="img-fluid-giua" src="img/backgroud-giua.png">
+  <div  class= "">
+    <img class="img-fluid" src="img/backgroud-giua.png">
   </div>
   
     <!-- Portfolio Grid Section -->
@@ -133,9 +133,9 @@
     <div class="container">
      <!-- <h2 class="text-center">Dự án nổi bật</h2> -->
       <!--<hr class="star-primary"> -->
-      <div>
+      <div class="custom">
           <p class="text-center">
-           <img alt="banner-beldecor-vn giua" src="{{URL::to('/')}}/img/duantieubieu.png" height="97" width="500">
+           <img class="img-fluid" alt="banner-beldecor-vn giua" src="{{URL::to('/')}}/img/duantieubieu.png" style="display: block; margin-left: auto; margin-right: auto;">
           </p>
       </div>
       <div class="row">
